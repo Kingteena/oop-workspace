@@ -1,0 +1,4 @@
+To Keep track of the changes of the commit in a high-level manner
+Simplicity and clarity while still summarizing all the changes made in that commit
+Every time a meaningful difference has been implemented
+False
