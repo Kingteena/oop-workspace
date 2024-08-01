@@ -1,7 +1,11 @@
-extern int two_five_nine(int[], int);
+# include <iostream>
+
+using namespace std;
+
+extern int sum_if_palindrome(int[], int);
 
 int main() {
-  int array[5] = {2, 3, 4, 5, 1};
-  two_five_nine(array, 5);
+  int array[5] = {1, 2, 4, 2, 1};
+  cout << sum_if_palindrome(array, -5) << endl;
   return 0;
 }

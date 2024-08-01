@@ -1,19 +1,34 @@
-#include <iostream>
-
-void two_five_nine(int array[], int n) {
-  int twos = 0, fives = 0, nines = 0;
-  for (int i = 0; i < n; i++) {
-    switch (array[i]) {
-      case 2:
-        twos += 1;
-        break;
-      case 5:
-        fives += 1;
-        break;
-      case 9:
-        nines += 1;
-        break;
+bool is_palindrome(int integers[], int length) {
+  if (length <= 0) {
+    return false;
+  }
+  for (int i = 0; i < length / 2; i++) {
+    if (integers[i] != integers[length - i - 1]) {
+      return false;
     }
   }
-  std::cout << "2:" << twos << ";5:" << fives << ";9:" << nines << ";\n";
+  return true;
+}
+
+int sum_array_elements(int integers[], int length) {
+  if (length <= 0) {
+    return -1;
+  }
+  int sum = 0;
+  for (int i = 0; i < length; i++) {
+    sum += integers[i];
+  }
+
+  return sum;
+}
+
+int sum_if_palindrome(int integers[], int length) {
+  if (length <= 0) {
+    return -1;
+  }
+  if (is_palindrome(integers, length)) {
+    return sum_array_elements(integers, length);
+  } else {
+    return -2;
+  }
 }

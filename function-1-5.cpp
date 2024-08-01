@@ -1,7 +1,12 @@
-int count_evens(int number) {
-  int count = 0;
-  for (int i = 2; i <= number; i = i + 2) {
-    count++;
+#include <iostream>
+
+using namespace std;
+
+void print_summed(int array1[3][3], int array2[3][3]) {
+  for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+      cout << array1[i][j] + array2[i][j] << " ";
+    }
+    cout << endl;
   }
-  return count;
 }

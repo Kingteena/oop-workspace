@@ -1,9 +1,7 @@
-#include <iostream>
-
-extern int num_count(int[], int, int);
+extern int count_digits(int[4][4]);
 
 int main() {
-  int array[5] = {1, 2, 2, 3, 1};
-  std::cout << num_count(array, 5, 2) << std::endl;
+  int array[4][4] = {1, 2, 2, 3};
+  count_digits(array);
   return 0;
 }

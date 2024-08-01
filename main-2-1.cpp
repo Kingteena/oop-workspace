@@ -1,9 +1,8 @@
 #include <iostream>
 
-extern int min_element(int[], int);
+extern void print_binary_str(std::string);
 
 int main() {
-  int array[5] = {2, 3, 4, 5, 6};
-  std::cout << min_element(array, 5) << std::endl;
+  print_binary_str("64");
   return 0;
 }
