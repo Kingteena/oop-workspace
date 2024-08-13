@@ -15,3 +15,12 @@ void printNumbers(int *numbers, int length) {
     cout << i << " " << numbers[i] << endl;
   }
 }
+
+bool equalsArray(int *numbers1,int *numbers2,int length) {
+    for (int i = 0; i < length; i++) {
+    if (numbers1[i] != numbers2[i]){
+        return false;
+    }
+  } 
+  return true;
+}
