@@ -1,8 +1,8 @@
 #include "Orchestra.h"
-#include <stdio.h>
 
 Orchestra::Orchestra(){
     Orchestra(0);
+    
 }
 
 Orchestra::Orchestra(int size){
