@@ -24,28 +24,28 @@ cout << "Assets created sucessfully" << endl;
 
 // Checking constructor, add_asset and get_num_assets
  cout << "Adding Asset to portfolio 2: " << endl;
-  if (portfolio1.add_asset(asset1)) {
+  if (portfolio2.add_asset(asset1)) {
     cout << "Adding asset1 was sucessfull" << endl;
   } else {
     cout << "Adding asset1 was uncessfull" << endl;
   }
   cout << "Number of assets portfolio2 has: " << portfolio1.get_num_assets() << endl;
 
-  if (portfolio1.add_asset(asset2)) {
+  if (portfolio2.add_asset(asset2)) {
     cout << "Adding asset2 was sucessfull" << endl;
   } else {
     cout << "Adding asset2 was uncessfull" << endl;
   }
     cout << "Number of assets portfolio2 has: " << portfolio1.get_num_assets() << endl;
 
-    if (portfolio1.add_asset(asset3)) {
+    if (portfolio2.add_asset(asset3)) {
     cout << "Adding asset3 was sucessfull" << endl;
   } else {
     cout << "Adding asset3 was uncessfull" << endl;
   }
       cout << "Number of assets portfolio2 has: " << portfolio1.get_num_assets() << endl;
 
-    if (portfolio1.add_asset(asset4)) {
+    if (portfolio2.add_asset(asset4)) {
     cout << "Adding asset4 was sucessfull" << endl;
   } else {
     cout << "Adding asset4 was uncessfull" << endl;
