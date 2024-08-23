@@ -2,12 +2,13 @@
 #define ASSETPORTFOLIO_H
 
 #include <string>
-#include "Asset.h"
+#include "Asset.h" 
 
 class AssetPortfolio {
  private:
     Asset *asset_list;
     int current_size, max_size;
+    
  public:
   AssetPortfolio();          // default constructor capacity of zero assets
   AssetPortfolio(int size);  // constructor for a portfolio of given size

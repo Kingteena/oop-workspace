@@ -10,7 +10,8 @@ int main() {
   Asset asset1 = Asset(2, "stones"), asset2 = Asset(3, "bricks"),
         asset3 = Asset(7, "cement"), asset4 = Asset(1, "computers");
   AssetPortfolio portfolio1 = AssetPortfolio(), portfolio2 = AssetPortfolio(3);
-cout << "Assets created sucessfully" <<endl;
+  
+cout << "Assets created sucessfully" << endl;
 
 // Checking empty constructor
   cout << "Adding Asset to portfolio 1: " << endl;
@@ -22,7 +23,7 @@ cout << "Assets created sucessfully" <<endl;
 
 
 // Checking constructor, add_asset and get_num_assets
- cout << "Adding Asset to portfolio w: " << endl;
+ cout << "Adding Asset to portfolio 2: " << endl;
   if (portfolio1.add_asset(asset1)) {
     cout << "Adding asset1 was sucessfull" << endl;
   } else {
