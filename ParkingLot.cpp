@@ -30,4 +30,14 @@ void ParkingLot::unparkVehicle(int id) {
   cout << "Vehicle not in the lot" << endl;
 }
 
+int ParkingLot::countOverstayingVehicles(int maxParkingDuration) { 
+    int count =0 ;
+    for (int i = 0; i < current_count; i++) {
+        if (vehicles[i]->getParkingDuration() > maxParkingDuration){
+            count++;
+        }
+    }
+    return count;
+}
+
 ParkingLot::~ParkingLot() { delete[] vehicles; }
