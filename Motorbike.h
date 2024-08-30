@@ -9,6 +9,4 @@ class Motorbike : public Vehicle {
   int getParkingDuration();
 };
 
-int Motorbike::getParkingDuration() { return int(time(NULL) - timeOfEntry) * 0.85 ; }
-
 #endif

@@ -9,6 +9,4 @@ class Bus : public Vehicle {
   int getParkingDuration();
 };
 
-int Bus::getParkingDuration() { return int(time(NULL) - timeOfEntry) * 0.75 ; }
-
 #endif

@@ -24,29 +24,32 @@ int main() {
     switch (type) {
       case 3: {
         Car temp = Car(i);
+        cout << "Creating car " << i << " with id " << temp.getID() << endl;
         car_park[i] = &temp;
         break;
       }
       case 2: {
         Bus temp = Bus(i);
+        cout << "Creating bus " << i << " with id " << temp.getID() << endl;
         car_park[i] = &temp;
         break;
       }
       case 1: {
         Motorbike temp = Motorbike(i);
+        cout << "Creating bike " << i << " with id " << temp.getID() << endl;
         car_park[i] = &temp;
         break;
       }
-      default:
+      default: {
         cout << "Invalid character. Try again" << endl;
-        i--;
         break;
+      }
     }
   }
 
   cout << "Printing parking duration" << endl;
   for (int i = 0; i < size; i++) {
-    cout << "Vehicle " << i << " :" << car_park[i]->getParkingDuration()
-         << endl;
+    cout << "Vehicle " << car_park[i]->getID() << " :"
+         << car_park[i]->getParkingDuration() << endl;
   }
 }
