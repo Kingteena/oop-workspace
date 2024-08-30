@@ -10,7 +10,6 @@ int ParkingLot::getCount() { return current_count; }
 
 void ParkingLot::parkVehicle(Vehicle* vehicle_to_park) {
   if (current_count < max_capacity) {
-    cout << vehicle_to_park->getID()<<endl;
     vehicles[current_count] = vehicle_to_park;
     current_count++;
   } else {
@@ -28,7 +27,7 @@ void ParkingLot::unparkVehicle(int id) {
       return;
     }
   }
-  cout << "Vehicle not in lot" << endl;
+  cout << "Vehicle not in the lot" << endl;
 }
 
 ParkingLot::~ParkingLot() { delete[] vehicles; }
