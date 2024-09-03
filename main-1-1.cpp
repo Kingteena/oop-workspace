@@ -4,8 +4,8 @@
 
 int main() {
   Appliance app = Appliance(3);
-  std::cout << app.getIsOn() << " " << app.getPowerRating() << std::endl;
+  std::cout << app.get_isOn() << " " << app.get_powerRating() << std::endl;
   app.turnOn();
-  app.setPowerRating(50);
-  std::cout << app.getIsOn() << " " << app.getPowerRating() << std::endl;
+  app.set_powerRating(50);
+  std::cout << app.get_isOn() << " " << app.get_powerRating() << std::endl;
 }

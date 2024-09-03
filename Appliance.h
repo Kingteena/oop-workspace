@@ -12,9 +12,9 @@ public:
     void turnOn();
     void turnOff();
     virtual double getPowerConsumption();
-    int getPowerRating();
-    bool getIsOn();
-    void setPowerRating(int powerRating);
+    int get_powerRating();
+    bool get_isOn();
+    void set_powerRating(int powerRating);
 };
 
 #endif
