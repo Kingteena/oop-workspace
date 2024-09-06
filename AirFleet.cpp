@@ -26,10 +26,6 @@ AirFleet::AirFleet() {
   fleet[4] = temp4;
 }
 
-AirFleet::~AirFleet() { for (int i = 0; i < 5; i++)
-{
-    delete fleet[i];
-}
-delete[] fleet; }
+AirFleet::~AirFleet() { delete[] fleet; }
 
 AirVehicle** AirFleet::get_fleet() { return fleet; }
