@@ -4,7 +4,7 @@ Airplane::Airplane() {}
 
 Airplane::Airplane(int w, int p) : AirVehicle(w), numPassengers(p) {}
 
-void Airplane::reducePassenders(int x) {
+void Airplane::reducePassengers(int x) {
   numPassengers -= x;
   if (numPassengers < 0) {
     numPassengers = 0;

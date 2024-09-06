@@ -11,7 +11,7 @@ class Airplane : public AirVehicle {
   Airplane();
   Airplane(int w, int p);
 
-  void reducePassenders(int x);
+  void reducePassengers(int x);
   int get_numPassengers();
 
   void fly(int headwind, int minutes);
