@@ -15,5 +15,5 @@ int main() {
     cout << "numFlights: " << vehicle->get_numberOfFlights() << endl;
   }
 
-  return 1;
+  return 0;
 }

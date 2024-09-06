@@ -19,3 +19,11 @@ void AirVehicle::set_numberOfFlights(int numberOfFlights) {this->numberOfFlights
 void AirVehicle::refuel() { fuel = 100; }
 
 void AirVehicle::fly(int headwind, int minutes) { numberOfFlights++; }
+
+void AirVehicle::reducePassengers(int x) {}
+
+int AirVehicle::get_numPassengers() { return 0; }
+
+string AirVehicle::get_name() { return string(); }
+
+void AirVehicle::set_name(string n) {}
