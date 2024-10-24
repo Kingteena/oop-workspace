@@ -7,6 +7,7 @@
 class Explosion : public GameEntity, public Effect {
  public:
   Explosion(int x, int y) : GameEntity(x, y, GameEntity::ExplosionType) {}
+  Explosion() : Explosion(-1,-1){}
 
   void apply(GameEntity& entity) {
     entity.setPos(std::make_tuple(-1, -1));
