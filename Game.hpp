@@ -64,7 +64,7 @@ class Game {
         break;
     }
   }
-  ~Game();
+  ~Game(){}
 
   void movePlayer(int dx, int dy) {
     if (starting_state == GameState::PLAYING) {
