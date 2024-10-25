@@ -1,5 +1,5 @@
 #ifndef GRIDITEM_HPP
-#define GRIDITEM_HH
+#define GRIDITEM_HPP
 
 #include <tuple>
 
@@ -33,5 +33,7 @@ class GridItem {
 
   virtual ~GridItem() { count--; }
 };
+
+int GridItem::count = 0;
 
 #endif
