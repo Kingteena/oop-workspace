@@ -6,12 +6,13 @@
 class GridItem {
  protected:
   int x, y, width, height;
+
  public:
-//   static int count;
+  static int count;
 
   GridItem(int x, int y, int width, int height)
       : x(x), y(y), width(width), height(height) {
-    // GridItem::count++;
+    GridItem::count++;
   }
   GridItem() : GridItem(0, 0, 0, 0) {}
 
@@ -25,14 +26,12 @@ class GridItem {
   int getGridWidth() { return width; }
   int getGridHeight() { return height; }
 
-  int getActiveGridItemCount() { 
-    // return GridItem::count; 
+  int getActiveGridItemCount() {
+    return GridItem::count;
     return 0;
-    }
+  }
 
-  virtual ~GridItem() {
-    //  GridItem::count--; 
-    }
+  virtual ~GridItem() { GridItem::count--; }
 };
 
 #endif

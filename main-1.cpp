@@ -5,9 +5,9 @@
 
 using namespace std;
 
-int main() {
-//   GridItem::count = 0;
+int GridItem::count = 0;
 
+int main() {
   GridItem item1 = GridItem(), item2 = GridItem(2, 3, 5, 5);
   int x, y;
 
