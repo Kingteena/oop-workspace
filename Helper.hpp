@@ -12,7 +12,8 @@ class Helper {
     int x1, x2, y1, y2;
     std::tie(x1, y1) = item1;
     std::tie(x2, y2) = item2;
-    return sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2));
+    return pow(abs(x1 - x2) + abs(y1 - y2), 2);
+    
   }
 };
 
