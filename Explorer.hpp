@@ -29,7 +29,7 @@ class Explorer : public GridItem {
       return false;
     }
   }
-  ~Explorer();
+  ~Explorer(){}
 };
 
 #endif

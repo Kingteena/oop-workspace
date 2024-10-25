@@ -27,7 +27,7 @@ class Pit : public Interactable {
 
   InteractableType getType() { return InteractableType::PIT; }
 
-  ~Pit();
+  ~Pit(){}
 };
 
 #endif

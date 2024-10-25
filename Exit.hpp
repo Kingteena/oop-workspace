@@ -18,6 +18,8 @@ class Exit : public Interactable {
   }
 
   InteractableType getType() { return InteractableType::EXIT; }
+
+  ~Exit(){}
 };
 
 #endif
