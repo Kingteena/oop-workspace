@@ -16,18 +16,19 @@ class Pit : public Interactable {
     if ((Helper::absoluteSquaredDistance(player->getCoordinates(), {x, y})) and
         (!covered)) {
       covered = true;
+      if (player->getStamina() == 0) {
+        return true;
+      } else {
+        return false;
+      }
     }
     player->jumpPit();
-    if (player->getStamina() == 0) {
-      return true;
-    } else {
-      return false;
-    }
+    return false;
   }
 
   InteractableType getType() { return InteractableType::PIT; }
 
-  ~Pit(){}
+  ~Pit() {}
 };
 
 #endif
