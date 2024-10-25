@@ -9,7 +9,7 @@ class Explorer : public GridItem {
 
  public:
   Explorer(int gridWidth, int gridHeight)
-      : stamina(2), GridItem(0, 0, gridWidth, gridHeight) {}
+      : GridItem(0, 0, gridWidth, gridHeight), stamina(2) {}
   int getStamina() { return stamina; }
 
   void jumpPit() {  // decrements the stamina of the explorer. The explorer

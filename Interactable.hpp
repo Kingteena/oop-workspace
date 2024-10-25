@@ -12,21 +12,17 @@ class Interactable : public GridItem {
 
   Interactable(int x, int y, int width, int height)
       : GridItem(x, y, width, height) {
-        GridItem::count++;
-      }
+    Interactable::count++;
+  }
 
   Interactable() : GridItem() {}
 
   virtual bool interact(Explorer* player) = 0;
   virtual InteractableType getType() = 0;
 
-  static int getActiveInteractableCount() {
-    GridItem::count++;
-  }
+  static int getActiveInteractableCount() { return Interactable::count; }
 
-  ~Interactable() {
-     GridItem::count--;
-  }
+  ~Interactable() { Interactable::count--; }
 };
-
+int Interactable::count = 0;
 #endif

@@ -12,8 +12,8 @@ class Exit : public Interactable {
   Exit(int width, int height)
       : Interactable(width - 1, height - 1, width, height) {}
 
-  bool interact(Explorer explorer) {
-    return (Helper::absoluteSquaredDistance(explorer.getCoordinates(),
+  bool interact(Explorer* player) {
+    return (Helper::absoluteSquaredDistance(player->getCoordinates(),
                                             {x, y}) == 0);
   }
 
